@@ -228,7 +228,7 @@ body:not(.home-active) .nav-btn:hover {
   position: relative;
   width: 100%;
   min-height: 85vh;
-  background: linear-gradient(135deg, #b91c1c 0%, #7f1d1d 100%);
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/vellore_collage_landscape.png') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   color: #ffffff;
@@ -1030,3 +1030,15 @@ footer.app-footer::before {
     padding: 0 16px 20px 16px;
   }
 }
+ 
+
+/* USER OVERRIDES */
+header.app-header { background: #ff0000 !important; border-bottom: none !important; }
+body.home-active header.app-header { background: rgba(255, 0, 0, 0.85) !important; }
+.brand-name { color: #ffffff !important; }
+.nav-link { color: #ffffff !important; }
+.nav-link:hover, .nav-item.active .nav-link { color: #ffde59 !important; }
+.nav-btn { color: #ffffff !important; border-color: #ffffff !important; }
+.nav-btn:hover { background: #ffffff !important; color: #ff0000 !important; }
+footer.app-footer { background: #ff0000 !important; }
+
