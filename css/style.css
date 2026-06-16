@@ -1033,12 +1033,12 @@ footer.app-footer::before {
  
 
 /* USER OVERRIDES */
-header.app-header { background: #ff0000 !important; border-bottom: none !important; }
-body.home-active header.app-header { background: rgba(255, 0, 0, 0.85) !important; }
+header.app-header { background: #cc0000 !important; border-bottom: none !important; }
+body.home-active header.app-header { background: #cc0000 !important; }
 .brand-name { color: #ffffff !important; }
+.brand-name span.accent-text { color: #ffde59 !important; }
 .nav-link { color: #ffffff !important; }
 .nav-link:hover, .nav-item.active .nav-link { color: #ffde59 !important; }
 .nav-btn { color: #ffffff !important; border-color: #ffffff !important; }
-.nav-btn:hover { background: #ffffff !important; color: #ff0000 !important; }
-footer.app-footer { background: #ff0000 !important; }
-
+.nav-btn:hover { background: #ffffff !important; color: #cc0000 !important; }
+footer.app-footer { background: #cc0000 !important; }
