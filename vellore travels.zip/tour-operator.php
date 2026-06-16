@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<?php include'includes/meta.txt'; ?>
+<?php include'includes/css.txt'; ?>
+<title>vellore travels - Tour Operators, Vellore Travel Gudie, Tour Operators in Vellore, Vellore Travels, Travel Agencies in Chennai, Transport, Vellore Call Taxi  </title>
+</head>
+
+<body id="tour">
+<div class="wrap"> 
+<?php include'includes/header.php'; ?>
+<?php include'includes/menu.php'; ?>
+<?php include'includes/banner.php'; ?>
+<div class="grid4">
+<?php include'includes/left.php'; ?>
+<div class="grid6">
+<div class="contents">
+<h1>Tour <span>Operators </span></h1>
+<p>&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" class="sub-tab">
+<tr class="head">
+<td>Tour Operators </td>
+</tr>
+<tr class="light">
+<td><strong>Time Travels &amp; Tours </strong><br />
+9, Katpadi Road, <br>Mundy Street,<br> Vellore-632004<br>
+ Phone: 0416-2225404  </td>
+</tr>
+<tr class="light">
+<td><strong>MKM Tours And Travels </strong><br />
+9/3, Kangeyanallur,<br> Vellore-632004<br>
+ Phone: 0416-2220739  </td>
+</tr>
+<tr class="light">
+<td><strong>Mahalakshmi Travels </strong><br />
+17, MBT Road, <br>Navalpur, Ranipet,<br> Vellore-632401<br>
+ Phone: 04172-270879  </td>
+</tr>
+<tr class="light">
+<td><strong> Durga Travels</strong><br />
+81, Chittoor Road, <br> Katpadi,<br> Vellore-632007<br>
+ Phone: 0416-2296102 </td>
+</tr>
+</table>
+<br />
+<p style="text-align:center"><strong><a href="http://vellorecity.com/toursandtravels_vellore.asp" target="_blank"> For More Details &gt;&gt;</a></strong></p>
+</div>
+ </div>
+<?php include'includes/right.php'; ?>
+<div class="clr"></div>
+</div>
+<?php include'includes/footer.php'; ?>
+<div class="clr"></div>
+</div>
+</body>
+</html>
