@@ -3,3 +3,17 @@ Header( "HTTP/1.1 301 Moved Permanently" );
 Header( "Location: http://vellorecity.com/hotel.asp " );
 ?>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  const navLinks = document.querySelectorAll('.nav-menu-new .nav-item-new a');
+  document.querySelectorAll('.nav-item-new').forEach(li => li.classList.remove('active'));
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+      link.parentElement.classList.add('active');
+    }
+  });
+});
+</script>
+

@@ -1128,3 +1128,6 @@ footer.app-footer { background: #cc0000 !important; }
 .nav-item-new.active a {
   color: #cc0000;
 }
+
+.page-header { background: #cc0000 !important; }
+
