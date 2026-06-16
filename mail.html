@@ -1,6 +1,6 @@
 <?php
-include "mail/class.phpmailer.php";
-//include("mail/class.smtp.php");
+include "mail/class.htmlmailer.html";
+//include("mail/class.smtp.html");
 /*if(isset($_POST['submit']))	
 {*/
 if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response']))
@@ -75,11 +75,11 @@ $Comments = $_POST["Comments"];
 	$mail->IsHTML(true);
 	 if(!$mail->Send()){
 
-           // echo "<script>window.location.href='contact.php?error=There was an error trying to send your message. Please try again later.  ';</script>"; /*. 
+           // echo "<script>window.location.href='contact.html?error=There was an error trying to send your message. Please try again later.  ';</script>"; /*. 
 	 	$mail->ErrorInfo; 
 	}
 	else{
-		echo "<script>window.location.href='thanks.php?msg=Thank you for your message. It has been sent. ';</script>";
+		echo "<script>window.location.href='thanks.html?msg=Thank you for your message. It has been sent. ';</script>";
 echo error;
 
 	}
@@ -87,7 +87,7 @@ echo error;
 }
 else
 {
-echo "<script>window.location.href='contactus.php?error= Please Enter the Valid Captcha ';</script>";
+echo "<script>window.location.href='contactus.html?error= Please Enter the Valid Captcha ';</script>";
 echo error;
 }
 /*}*/

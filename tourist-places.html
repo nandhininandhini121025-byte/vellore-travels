@@ -1,4 +1,76 @@
-<?php require_once 'includes/spa_header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the rich heritage of Vellore with Vellore Travels. Book cabs, tours, hotels, and explore Vellore Fort, Golden Temple, Yelagiri, and more with our premium travel services.">
+  <title>Vellore Travels - Premium Tour Operators & Travel Guides in Vellore</title>
+  
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Base stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphic Header -->
+  <header class="app-header">
+    <div class="nav-wrapper">
+      <a href="#home" class="logo-section" id="brand-logo-link">
+        <div class="brand-logo-circle" id="logo-vt-circle">VT</div>
+        <span class="brand-name">Vellore Travels</span>
+        <div class="header-vehicles" id="header-vehicles-badge">
+          <!-- Car SVG (White body with gold wheels/accents, red windows) -->
+          <svg class="vehicle-svg car-svg" viewBox="0 0 100 50" width="44" height="22">
+            <path d="M10 32 C 10 25, 20 23, 28 23 C 32 15, 42 10, 56 10 C 70 10, 78 17, 82 23 C 88 23, 94 25, 94 32 C 94 36, 90 38, 86 38 L 18 38 C 14 38, 10 36, 10 32 Z" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+            <circle cx="28" cy="38" r="8" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="72" cy="38" r="8" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="28" cy="38" r="3" fill="#ffffff"/>
+            <circle cx="72" cy="38" r="3" fill="#ffffff"/>
+            <path d="M38 23 L 42 14 L 54 14 L 54 23 Z" fill="#b91c1c"/>
+            <path d="M58 23 L 58 14 L 66 14 L 72 23 Z" fill="#b91c1c"/>
+          </svg>
+          <!-- Bus SVG (Gold body with white windows/accents) -->
+          <svg class="vehicle-svg bus-svg" viewBox="0 0 100 50" width="44" height="22">
+            <rect x="10" y="12" width="76" height="24" rx="6" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
+            <rect x="80" y="16" width="10" height="18" rx="2" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+            <circle cx="28" cy="36" r="8" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+            <circle cx="68" cy="36" r="8" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+            <circle cx="28" cy="36" r="3" fill="#d97706"/>
+            <circle cx="68" cy="36" r="3" fill="#d97706"/>
+            <rect x="18" y="16" width="10" height="8" rx="1" fill="#ffffff"/>
+            <rect x="32" y="16" width="10" height="8" rx="1" fill="#ffffff"/>
+            <rect x="46" y="16" width="10" height="8" rx="1" fill="#ffffff"/>
+            <rect x="60" y="16" width="10" height="8" rx="1" fill="#ffffff"/>
+            <path d="M12 28 L 86 28" stroke="#ffffff" stroke-width="2"/>
+          </svg>
+        </div>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="menu-toggle" id="menu-hamburger" aria-label="Toggle Navigation Menu">
+        &#9776;
+      </button>
+      
+      <!-- Dynamic Nav Links -->
+      <ul class="nav-menu" id="navigation-menu">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="tourist-places.html">Tour</a></li>
+        <li class="nav-item"><a class="nav-link" href="vellore-hotels.html">Hotels</a></li>
+        <li class="nav-item"><a class="nav-link" href="vellore-atm.html">ATM</a></li>
+        <li class="nav-item"><a class="nav-link" href="vellore-banks.html">Banks</a></li>
+        <li class="nav-item"><a class="nav-link" href="vellore-taxiservice.html">Travels/Cab</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+</body>
+</html>
+
 <main class="main-content animated-fade-in" id="app-root">
 <div class="app-container" style="padding-top: 120px; padding-bottom: 80px;">
 <div style="background:#fff; padding:40px; border-radius:20px; box-shadow:0 20px 40px rgba(0,0,0,0.08);">
@@ -94,7 +166,7 @@
 
 <div class="tour-grid">
   <!-- Sripuram Golden Temple -->
-  <div class="tour-card" style="cursor:pointer;" onclick="window.location.href='golden-temple.php'">
+  <div class="tour-card" style="cursor:pointer;" onclick="window.location.href='golden-temple.html'">
     <img src="images/new_golden_temple.png" alt="Sripuram Golden Temple" class="tour-image" />
     <div class="tour-content">
       <h2>Sripuram Golden Temple</h2>
@@ -111,7 +183,7 @@
   </div>
 
   <!-- Vellore Fort -->
-  <div class="tour-card" style="cursor:pointer;" onclick="window.location.href='vellore-fort.php'">
+  <div class="tour-card" style="cursor:pointer;" onclick="window.location.href='vellore-fort.html'">
     <img src="images/new_vellore_fort.png" alt="Vellore Fort" class="tour-image" />
     <div class="tour-content">
       <h2>Vellore Fort</h2>
@@ -145,7 +217,7 @@
   </div>
 
   <!-- Amirthi Forest -->
-  <div class="tour-card" style="cursor:pointer;" onclick="window.location.href='amrithi-forest.php'">
+  <div class="tour-card" style="cursor:pointer;" onclick="window.location.href='amrithi-forest.html'">
     <img src="images/new_amirthi_forest.jpg" alt="Amirthi Zoological Park" class="tour-image" />
     <div class="tour-content">
       <h2>Amirthi Forest & Waterfalls</h2>
@@ -162,7 +234,7 @@
   </div>
 
   <!-- Govt Museum -->
-  <div class="tour-card" style="cursor:pointer;" onclick="window.location.href='govt-museum.php'">
+  <div class="tour-card" style="cursor:pointer;" onclick="window.location.href='govt-museum.html'">
     <img src="images/new_govt_museum.png" alt="Government Museum" class="tour-image" />
     <div class="tour-content">
       <h2>Government Museum</h2>
@@ -179,7 +251,7 @@
   </div>
 
   <!-- Fundera Park -->
-  <div class="tour-card" style="cursor:pointer;" onclick="window.location.href='fundera-park.php'">
+  <div class="tour-card" style="cursor:pointer;" onclick="window.location.href='fundera-park.html'">
     <img src="images/fundera_park.jpg" alt="Fundera Park" class="tour-image" />
     <div class="tour-content">
       <h2>Fundera Park</h2>
@@ -201,4 +273,51 @@
 </div>
 </div>
 </main>
-<?php require_once 'includes/spa_footer.php'; ?>
+  <!-- Footer Section -->
+  <footer class="app-footer">
+    <div class="app-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Vellore Travels</h3>
+          <p>Your premier gateway to exploring the historic Fort City of Tamil Nadu. Offering reliable, comfortable, and professional taxi and tour services since 2008.</p>
+          <p>&copy; 2026 Vellore Travels. All rights reserved.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links" id="footer-navigation-links">
+            <li><a href="#home" data-route="home">Home</a></li>
+            <li><a href="#places" data-route="places">Tourist Attractions</a></li>
+            <li><a href="#directory" data-route="directory">City Directory</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Reach Us</h3>
+          <p><strong>Office:</strong> Officers Line, Vellore, Tamil Nadu, India</p>
+          <p><strong>Helpline:</strong> +91 416 2223051</p>
+          <p><strong>Email:</strong> bookings@velloretravels.in</p>
+        </div>
+      </div>
+      <div class="copyright">
+        Designed for visual excellence, accessibility, and modern responsive performance.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Tourist Spots details -->
+  <div class="modal-overlay" id="attraction-details-modal">
+    <div class="modal-window">
+      <img src="" alt="Attraction Banner" class="modal-header-img" id="modal-banner-image">
+      <button class="modal-close-btn" id="close-attraction-modal" aria-label="Close details modal">&times;</button>
+      <div class="modal-body">
+        <h2 class="modal-title" id="modal-attraction-title">Attraction Title</h2>
+        <div class="modal-text" id="modal-attraction-body">
+          Description content goes here...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPA Router Logic removed to allow standard PHP rendering -->
+</body>
+</html>
+

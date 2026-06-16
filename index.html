@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the rich heritage of Vellore with Vellore Travels. Book cabs, tours, hotels, and explore Vellore Fort, Golden Temple, Yelagiri, and more with our premium travel services.">
+  <title>Vellore Travels - Premium Tour Operators & Travel Guides in Vellore</title>
+  
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Base stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphic Header -->
+  <header class="app-header">
+    <div class="nav-wrapper">
+      <a href="#home" class="logo-section" id="brand-logo-link">
+        <div class="brand-logo-circle" id="logo-vt-circle">VT</div>
+        <span class="brand-name">Vellore Travels</span>
+        <div class="header-vehicles" id="header-vehicles-badge">
+          <!-- Car SVG (White body with gold wheels/accents, red windows) -->
+          <svg class="vehicle-svg car-svg" viewBox="0 0 100 50" width="44" height="22">
+            <path d="M10 32 C 10 25, 20 23, 28 23 C 32 15, 42 10, 56 10 C 70 10, 78 17, 82 23 C 88 23, 94 25, 94 32 C 94 36, 90 38, 86 38 L 18 38 C 14 38, 10 36, 10 32 Z" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+            <circle cx="28" cy="38" r="8" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="72" cy="38" r="8" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="28" cy="38" r="3" fill="#ffffff"/>
+            <circle cx="72" cy="38" r="3" fill="#ffffff"/>
+            <path d="M38 23 L 42 14 L 54 14 L 54 23 Z" fill="#b91c1c"/>
+            <path d="M58 23 L 58 14 L 66 14 L 72 23 Z" fill="#b91c1c"/>
+          </svg>
+          <!-- Bus SVG (Gold body with white windows/accents) -->
+          <svg class="vehicle-svg bus-svg" viewBox="0 0 100 50" width="44" height="22">
+            <rect x="10" y="12" width="76" height="24" rx="6" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
+            <rect x="80" y="16" width="10" height="18" rx="2" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+            <circle cx="28" cy="36" r="8" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+            <circle cx="68" cy="36" r="8" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+            <circle cx="28" cy="36" r="3" fill="#d97706"/>
+            <circle cx="68" cy="36" r="3" fill="#d97706"/>
+            <rect x="18" y="16" width="10" height="8" rx="1" fill="#ffffff"/>
+            <rect x="32" y="16" width="10" height="8" rx="1" fill="#ffffff"/>
+            <rect x="46" y="16" width="10" height="8" rx="1" fill="#ffffff"/>
+            <rect x="60" y="16" width="10" height="8" rx="1" fill="#ffffff"/>
+            <path d="M12 28 L 86 28" stroke="#ffffff" stroke-width="2"/>
+          </svg>
+        </div>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="menu-toggle" id="menu-hamburger" aria-label="Toggle Navigation Menu">
+        &#9776;
+      </button>
+      
+      <!-- Dynamic Nav Links -->
+      <ul class="nav-menu" id="navigation-menu">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="tourist-places.html">Tour</a></li>
+        <li class="nav-item"><a class="nav-link" href="vellore-hotels.html">Hotels</a></li>
+        <li class="nav-item"><a class="nav-link" href="vellore-atm.html">ATM</a></li>
+        <li class="nav-item"><a class="nav-link" href="vellore-banks.html">Banks</a></li>
+        <li class="nav-item"><a class="nav-link" href="vellore-taxiservice.html">Travels/Cab</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+</body>
+</html>
+
+
+  <!-- Client-side Router Container -->
+  <main class="main-content animated-fade-in" id="app-root">
+    <div class="home-hero-full animated-fade-in">
+      <div class="app-container hero-inner-container">
+        <div class="hero-content-wrapper">
+          <h1 class="hero-main-title">Explore<br>your amazing city<br><span class="hero-vellore-text">Vellore</span></h1>
+          <p class="hero-sub-title">Find great places to stay, eat, shop, or visit from local experts</p>
+          
+          <div class="complex-search-bar">
+            <div class="search-input-group">
+              <input type="text" placeholder="Ex: food, service, hotel" id="search-what">
+            </div>
+            <div class="search-divider"></div>
+            <div class="search-input-group">
+              <select id="search-where">
+                <option value="">Where</option>
+                <option value="vellore">Vellore</option>
+                <option value="yelagiri">Yelagiri</option>
+              </select>
+            </div>
+            <button class="search-submit-btn" id="home-search-btn" onclick="window.location.href='tourist-places.html'">Search</button>
+          </div>
+
+          <div class="highlights-text">Or browse the highlights</div>
+          <div class="highlights-pills">
+            <button class="pill-btn" onclick="window.location.href='vellore-hotels.html'">🍴 Restaurant</button>
+            <button class="pill-btn" onclick="window.location.href='vellore-hotels.html'">🏨 Hotel</button>
+            <button class="pill-btn" onclick="window.location.href='tourist-places.html'">🗺️ Places</button>
+            <button class="pill-btn" onclick="window.location.href='tourist-places.html'">🛍️ Shopping</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="feature-cards-container">
+        <div class="app-container">
+          <div class="feature-cards-grid">
+            <div class="feat-card">
+              <div class="feat-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v12M9 9h6M9 15h6"></path><path d="M9 12h3"></path></svg>
+              </div>
+              <h4>Best Price<br>Guarantee</h4>
+              <p>We offer the most competitive rates for cabs, hotels, and customized tour packages in Vellore.</p>
+            </div>
+            <div class="feat-card">
+              <div class="feat-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </div>
+              <h4>Travellers<br>Love Us</h4>
+              <p>Thousands of happy customers have rated us highly for our reliable service and friendly guides.</p>
+            </div>
+            <div class="feat-card">
+              <div class="feat-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <h4>Best Travel<br>Agent</h4>
+              <p>Recognized as Vellore's premier travel operator since 2008, ensuring safe and memorable journeys.</p>
+            </div>
+            <div class="feat-card">
+              <div class="feat-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+              </div>
+              <h4>Our Dedicated<br>Support</h4>
+              <p>Our customer support team is available 24/7 to assist you with your bookings and travel needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="app-footer">
+    <div class="app-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Vellore Travels</h3>
+          <p>Your premier gateway to exploring the historic Fort City of Tamil Nadu. Offering reliable, comfortable, and professional taxi and tour services since 2008.</p>
+          <p>&copy; 2026 Vellore Travels. All rights reserved.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links" id="footer-navigation-links">
+            <li><a href="#home" data-route="home">Home</a></li>
+            <li><a href="#places" data-route="places">Tourist Attractions</a></li>
+            <li><a href="#directory" data-route="directory">City Directory</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Reach Us</h3>
+          <p><strong>Office:</strong> Officers Line, Vellore, Tamil Nadu, India</p>
+          <p><strong>Helpline:</strong> +91 416 2223051</p>
+          <p><strong>Email:</strong> bookings@velloretravels.in</p>
+        </div>
+      </div>
+      <div class="copyright">
+        Designed for visual excellence, accessibility, and modern responsive performance.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Tourist Spots details -->
+  <div class="modal-overlay" id="attraction-details-modal">
+    <div class="modal-window">
+      <img src="" alt="Attraction Banner" class="modal-header-img" id="modal-banner-image">
+      <button class="modal-close-btn" id="close-attraction-modal" aria-label="Close details modal">&times;</button>
+      <div class="modal-body">
+        <h2 class="modal-title" id="modal-attraction-title">Attraction Title</h2>
+        <div class="modal-text" id="modal-attraction-body">
+          Description content goes here...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPA Router Logic removed to allow standard PHP rendering -->
+</body>
+</html>
+
