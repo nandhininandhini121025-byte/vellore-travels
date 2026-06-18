@@ -226,8 +226,10 @@ body:not(.home-active) .nav-btn:hover {
 /* Full Screen Home Hero */
 .home-hero-full {
   position: relative;
-  width: 100%;
-  min-height: 85vh;
+  max-width: 1200px;
+  margin: 30px auto;
+  border-radius: 15px;
+  min-height: 500px;
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/vellore_collage_landscape.png') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
