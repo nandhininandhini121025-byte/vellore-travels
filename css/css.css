@@ -90,16 +90,16 @@ a.info:hover{background:#000163; color:#fff; text-decoration:none; }
 
 /****************************** Contact us paget *********************************/
 .contact-us{ width:550px;margin:0px auto;}
-.mandatory{ text-align:right;color:#cc0000;}
+.mandatory{ text-align:right;color:#ff0800;}
 .contact-us td { font:12px Arial, Helvetica, sans-serif; color:#333333}
 .contact-us-address{ width:600px;margin:0px auto; border:1px solid #eae9e9; text-align:left; padding-left:10px;}
-.red{color:#cc0000;}
+.red{color:#ff0800;}
 /****************************** Site Map *********************************/
 .sitemap{margin-left:25px; padding:0px;}
 .sitemap li{list-style:none;  list-style:url(../images/site-map.png);}
 .sitemap li a{font:normal 13px Arial, Helvetica, sans-serif; text-decoration:none; color:#313131; font-weight:bold;}
-.sitemap li a:hover{text-decoration:underline; color:#CC0000;}
+.sitemap li a:hover{text-decoration:underline; color:#ff0800;}
 .sitemap li ul{margin-left:35px; padding:0px;}
 .sitemap li ul li{list-style:circle;}
 .sitemap li ul li a{font:normal 13px Arial, Helvetica, sans-serif; text-decoration:none; color:#1D3070; list-style:url(../images/li-abg.jpg);}
-.sitemap li ul li a:hover{text-decoration:underline; color:#CC0000;}
+.sitemap li ul li a:hover{text-decoration:underline; color:#ff0800;}
