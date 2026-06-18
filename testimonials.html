@@ -16,35 +16,26 @@
 <body>
 
   <!-- Sticky Glassmorphic Header -->
-    <header class="app-header-new">
-    <div class="header-top-bar">
-      <div class="header-container-top">
-        <a href="index.html" class="logo-section-new">
-          <div class="brand-logo-white-box">VT</div>
-          <span class="brand-name-new">Vellore <span class="accent-text">Travels</span></span>
+        <header class="app-header-red-strip">
+      <div class="red-strip-container">
+        <a href="index.html" class="logo-section">
+          <div class="brand-logo-vt">VT</div>
+          <span class="brand-name-new" style="color: white; font-weight: bold; font-size: 24px; margin-left: 10px;">Vellore <span class="accent-text" style="color: #ffcccb;">Travels</span></span>
         </a>
-        <div class="top-nav-links">
-          <a href="index.html">Home</a>
-          <a href="sitemap.html">Sitemap</a>
-          <a href="contactus.html">Contact Us</a>
+        <div class="nav-and-contact">
+          <nav class="nav-menu">
+            <a href="index.html">HOME</a>
+            <a href="tourist-places.html">TOURIST PLACES</a>
+            <a href="vellore-hotels.html">HOTELS TO STAY</a>
+            <a href="vellore-atm.html">ATM</a>
+            <a href="vellore-banks.html">BANKS</a>
+            <a href="vellore-taxiservice.html">TAXI</a>
+            <a href="tour-operator.html">TOUR OPERATORS</a>
+          </nav>
+          <a href="contactus.html" class="btn-contact-white">CONTACT US</a>
         </div>
       </div>
-    </div>
-    <div class="header-bottom-bar">
-      <div class="header-container-bottom">
-        <ul class="nav-menu-new">
-          <li class="nav-item-new active"><a href="index.html">HOME</a></li>
-          <li class="nav-item-new"><a href="tourist-places.html">TOURIST PLACES</a></li>
-          <li class="nav-item-new"><a href="vellore-hotels.html">HOTELS TO STAY</a></li>
-          <li class="nav-item-new"><a href="vellore-atm.html">ATM</a></li>
-          <li class="nav-item-new"><a href="vellore-banks.html">BANKS</a></li>
-          <li class="nav-item-new"><a href="vellore-taxiservice.html">TAXI</a></li>
-          <li class="nav-item-new"><a href="tour-operator.html">TOUR OPERATORS</a></li>
-          <li class="nav-item-new"><a href="contactus.html">CONTACT US</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
+    </header>
 
 </body>
 </html>
@@ -179,13 +170,15 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.nav-menu-new .nav-item-new a');
-  document.querySelectorAll('.nav-item-new').forEach(li => li.classList.remove('active'));
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
   navLinks.forEach(link => {
     if (link.getAttribute('href') === currentPath) {
-      link.parentElement.classList.add('active');
+      link.classList.add('active');
     }
   });
 });
 </script>
+
+
 
