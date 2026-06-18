@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the rich heritage of Vellore with Vellore Travels. Book cabs, tours, hotels, and explore Vellore Fort, Golden Temple, Yelagiri, and more with our premium travel services.">
+  <title>Vellore Travels - Premium Tour Operators & Travel Guides in Vellore</title>
+  
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Base stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphic Header -->
+        <header class="app-header-red-strip">
+      <div class="red-strip-container">
+        <a href="index.html" class="logo-section">
+          <div class="brand-logo-vt">VT</div>
+          <span class="brand-name-new" style="color: white; font-weight: bold; font-size: 24px; margin-left: 10px;">Vellore <span class="accent-text" style="color: #ffcccb;">Travels</span></span>
+        </a>
+        <div class="nav-and-contact">
+          <nav class="nav-menu">
+            <a href="index.html">HOME</a>
+            <a href="tourist-places.html">TOURIST PLACES</a>
+            <a href="vellore-hotels.html">HOTELS TO STAY</a>
+            <a href="vellore-atm.html">ATM</a>
+            <a href="vellore-banks.html">BANKS</a>
+            <a href="vellore-taxiservice.html">TAXI</a>
+            <a href="tour-operator.html">TOUR OPERATORS</a>
+          </nav>
+          <a href="contactus.html" class="btn-contact-white">CONTACT US</a>
+        </div>
+      </div>
+    </header>
+
+</body>
+</html>
+
+<main class="main-content animated-fade-in" id="app-root">
+<div class="app-container" style="padding-top: 120px; padding-bottom: 80px;">
+  <div style="background:#fff; padding:40px; border-radius:20px; box-shadow:0 20px 40px rgba(0,0,0,0.08);">
+    <div class="contents">
+      <h1><a href="tourist-places.html" style="color:var(--text-secondary); text-decoration:none;">Tourist Places</a> &raquo; <span>St. John's Church </span></h1>
+      <p>
+        <img src="images/st_johns_church.jpg" alt="Govt Museum" style="float:right; margin:5px 0px 15px 20px; width:400px; border-radius:12px; box-shadow:0 10px 20px rgba(0,0,0,0.1);" />
+        This state St. John's Church is inside the fort and can be found on map. This Museum was opened to the public in 1985. It consists of objects of art, archaeology, pre-history, weapons, sculptures, bronzes, wood carvings, handicrafts, numismatics, philately, botany, geology and zoology. It treasures ancient and present day curios relating to Anthropology, Art and Archaeology, Botany, Geology, Numismatics, Pre-history, Zoology, etc.
+      </p>
+      <p>The historical monuments of the erst while composite North Arcot District are gracefully depicted in the Gallery. Special exhibits include Bronze double antenna sword from Vellore Taluk, dating back to 400 BC., Stone sculptures from Late Pallava to Vijayanagar periods, Ivory chess board and coins used by the last Kandian King of Sri Lanka, Vikrama Raja Singha.</p>
+      <p> The educational activities of this Museum include Art camp for school students, Study of inscriptions and iconography for college students etc.</p>
+      <p>The St. John's Church is situated besides the main bus stand in Lakshmanaswamy Town Hall. The museum is under the watch of Department of Museums. This might be the most unusual museum that you will ever see. The museum is open on all days from 9 a.m to 12 noon and from 2 p.m. to 5 p.m. </p>
+    </div>
+  </div>
+</div>
+</main>
+  <!-- Footer Section -->
+  <footer class="app-footer">
+    <div class="app-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Vellore Travels</h3>
+          <p>Your premier gateway to exploring the historic Fort City of Tamil Nadu. Offering reliable, comfortable, and professional taxi and tour services since 2008.</p>
+          <p>&copy; 2026 Vellore Travels. All rights reserved.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links" id="footer-navigation-links">
+            <li><a href="#home" data-route="home">Home</a></li>
+            <li><a href="#places" data-route="places">Tourist Attractions</a></li>
+            <li><a href="#directory" data-route="directory">City Directory</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Reach Us</h3>
+          <p><strong>Office:</strong> Officers Line, Vellore, Tamil Nadu, India</p>
+          <p><strong>Helpline:</strong> +91 416 2223051</p>
+          <p><strong>Email:</strong> bookings@velloretravels.in</p>
+        </div>
+      </div>
+      <div class="copyright">
+        Designed for visual excellence, accessibility, and modern responsive performance.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Tourist Spots details -->
+  <div class="modal-overlay" id="attraction-details-modal">
+    <div class="modal-window">
+      <img src="" alt="Attraction Banner" class="modal-header-img" id="modal-banner-image">
+      <button class="modal-close-btn" id="close-attraction-modal" aria-label="Close details modal">&times;</button>
+      <div class="modal-body">
+        <h2 class="modal-title" id="modal-attraction-title">Attraction Title</h2>
+        <div class="modal-text" id="modal-attraction-body">
+          Description content goes here...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPA Router Logic removed to allow standard PHP rendering -->
+</body>
+</html>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('active');
+    }
+  });
+});
+</script>
+
+
+
+
+
