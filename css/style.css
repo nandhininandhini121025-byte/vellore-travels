@@ -1332,7 +1332,8 @@ body {
   font-weight: 800;
   margin-bottom: 15px;
   letter-spacing: 1px;
-  color: #991b1b;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
 
 .hero-subtitle {
