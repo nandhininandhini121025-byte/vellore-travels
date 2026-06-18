@@ -230,12 +230,30 @@ body:not(.home-active) .nav-btn:hover {
   margin: 30px auto;
   border-radius: 15px;
   min-height: 500px;
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/vellore_collage_landscape.png') no-repeat center center/cover;
+  background-color: #000;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   color: #ffffff;
   padding-top: 120px; /* Space for absolute header */
   margin-bottom: 80px; /* Space for overlapping cards */
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 1;
+}
+
+.hero-slide.active {
+  opacity: 1;
 }
 
 .hero-inner-container {

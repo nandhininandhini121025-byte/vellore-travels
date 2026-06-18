@@ -48,7 +48,12 @@
 
 <!-- Client-side Router Container -->
   <main class="main-content animated-fade-in" id="app-root">
-    <div class="home-hero-full animated-fade-in">
+    <div class="home-hero-full animated-fade-in" id="hero-slider">
+      <!-- Slides -->
+      <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('images/new_vellore_fort.png');"></div>
+      <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('images/new_golden_temple.png');"></div>
+      <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('images/jalagamparai_waterfalls.png');"></div>
+      <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('images/yelagiri_hills.png');"></div>
     </div>
 
     <div class="app-container" style="margin-top: 2rem; margin-bottom: 50px; text-align: center;">
@@ -108,6 +113,21 @@
   </div>
 
   <!-- SPA Router Logic removed to allow standard PHP rendering -->
+  <!-- Slideshow Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const slides = document.querySelectorAll('.hero-slide');
+      let currentSlide = 0;
+      
+      if(slides.length > 0) {
+        setInterval(() => {
+          slides[currentSlide].classList.remove('active');
+          currentSlide = (currentSlide + 1) % slides.length;
+          slides[currentSlide].classList.add('active');
+        }, 3000); // Change image every 3 seconds
+      }
+    });
+  </script>
 </body>
 </html>
 
