@@ -1,72 +1,248 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<?php include'includes/meta.txt'; ?>
-<?php include'includes/css.txt'; ?>
-<title>vellore travels - Tour Operators, Vellore Travel Gudie, Tour Operators in Vellore, Vellore Travels, Travel Agencies in Chennai, Transport, Vellore Call Taxi  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the rich heritage of Vellore with Vellore Travels. Book cabs, tours, hotels, and explore Vellore Fort, Golden Temple, Yelagiri, and more with our premium travel services.">
+  <title>Vellore Travels - Premium Tour Operators & Travel Guides in Vellore</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<body id="tour">
-<div class="wrap"> 
-<?php include'includes/header.html'; ?>
-<?php include'includes/menu.html'; ?>
-<?php include'includes/banner.html'; ?>
-<div class="grid4">
-<?php include'includes/left.html'; ?>
-<div class="grid6">
+    <header class="app-header-new">
+    <div class="header-top-bar">
+      <div class="header-container-top">
+        <a href="index.html" class="logo-section-new">
+          <div class="brand-logo-white-box">VT</div>
+          <span class="brand-name-new">Vellore <span class="accent-text">Travels</span></span>
+        </a>
+        <div class="top-nav-links">
+          <a href="index.html">Home</a>
+          <a href="sitemap.html">Sitemap</a>
+          <a href="contactus.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom-bar">
+      <div class="header-container-bottom">
+        <ul class="nav-menu-new">
+          <li class="nav-item-new"><a href="index.html">HOME</a></li>
+          <li class="nav-item-new"><a href="tourist-places.html">TOURIST PLACES</a></li>
+          <li class="nav-item-new"><a href="vellore-hotels.html">HOTELS TO STAY</a></li>
+          <li class="nav-item-new"><a href="vellore-atm.html">ATM</a></li>
+          <li class="nav-item-new"><a href="vellore-banks.html">BANKS</a></li>
+          <li class="nav-item-new"><a href="vellore-taxiservice.html">TAXI</a></li>
+          <li class="nav-item-new active"><a href="tour-operator.html">TOUR OPERATORS</a></li>
+          <li class="nav-item-new"><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+<main class="main-content animated-fade-in" id="app-root">
+<div class="app-container" style="padding-top: 120px; padding-bottom: 80px;">
+<div style="background:#fff; padding:40px; border-radius:20px; box-shadow:0 20px 40px rgba(0,0,0,0.08);">
 <div class="contents">
 <h1>Tour <span>Operators </span></h1>
 <p>&nbsp;</p>
-<table border="0" cellpadding="1" cellspacing="1" class="sub-tab">
-<tr class="head">
-<td>Tour Operators </td>
-</tr>
-<tr class="light">
-<td><strong>Time Travels &amp; Tours </strong><br />
-9, Katpadi Road, <br>Mundy Street,<br> Vellore-632004<br>
- Phone: 0416-2225404  </td>
-</tr>
-<tr class="light">
-<td><strong>MKM Tours And Travels </strong><br />
-9/3, Kangeyanallur,<br> Vellore-632004<br>
- Phone: 0416-2220739  </td>
-</tr>
-<tr class="light">
-<td><strong>Mahalakshmi Travels </strong><br />
-17, MBT Road, <br>Navalpur, Ranipet,<br> Vellore-632401<br>
- Phone: 04172-270879  </td>
-</tr>
-<tr class="light">
-<td><strong> Durga Travels</strong><br />
-81, Chittoor Road, <br> Katpadi,<br> Vellore-632007<br>
- Phone: 0416-2296102 </td>
-</tr>
-</table>
-<br />
-<p style="text-align:center"><strong><a href="http://vellorecity.com/toursandtravels_vellore.asp" target="_blank"> For More Details &gt;&gt;</a></strong></p>
+<style>
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+.directory-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+  position: relative;
+  overflow: hidden;
+}
+.directory-card:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 4px; height: 100%;
+  background: var(--accent-primary, #991b1b);
+}
+.directory-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+.directory-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.directory-card-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #f3f4f6;
+}
+.card-btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-map {
+  background: #fef3c7;
+  color: #b45309;
+}
+.btn-map:hover {
+  background: #fde68a;
+}
+.btn-web {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+.btn-web:hover {
+  background: #bae6fd;
+}
+</style>
+
+<div class="directory-grid">
+  <!-- Time Travels & Tours -->
+  <div class="directory-card">
+    <div class="directory-card-title">Time Travels & Tours</div>
+    <div class="directory-card-item">
+      <span>📍</span>
+      <span>9, Katpadi Road, Mundy Street,<br>Vellore - 632004</span>
+    </div>
+    <div class="directory-card-item">
+      <span>📞</span>
+      <a href="tel:04162225404" style="color: #4b5563; text-decoration: none;">0416-2225404</a>
+    </div>
+    <div class="card-actions">
+      <a href="https://www.google.com/maps/search/?api=1&query=Time+Travels+Tours+Vellore" target="_blank" class="card-btn btn-map">📍 Map</a>
+      <a href="#" target="_blank" class="card-btn btn-web">🌐 Website</a>
+    </div>
+  </div>
+
+  <!-- MKM Tours And Travels -->
+  <div class="directory-card">
+    <div class="directory-card-title">MKM Tours And Travels</div>
+    <div class="directory-card-item">
+      <span>📍</span>
+      <span>9/3, Kangeyanallur,<br>Vellore - 632004</span>
+    </div>
+    <div class="directory-card-item">
+      <span>📞</span>
+      <a href="tel:04162220739" style="color: #4b5563; text-decoration: none;">0416-2220739</a>
+    </div>
+    <div class="card-actions">
+      <a href="https://www.google.com/maps/search/?api=1&query=MKM+Tours+And+Travels+Vellore" target="_blank" class="card-btn btn-map">📍 Map</a>
+      <a href="#" target="_blank" class="card-btn btn-web">🌐 Website</a>
+    </div>
+  </div>
+
+  <!-- Mahalakshmi Travels -->
+  <div class="directory-card">
+    <div class="directory-card-title">Mahalakshmi Travels</div>
+    <div class="directory-card-item">
+      <span>📍</span>
+      <span>17, MBT Road, Navalpur, Ranipet,<br>Vellore - 632401</span>
+    </div>
+    <div class="directory-card-item">
+      <span>📞</span>
+      <a href="tel:04172270879" style="color: #4b5563; text-decoration: none;">04172-270879</a>
+    </div>
+    <div class="card-actions">
+      <a href="https://www.google.com/maps/search/?api=1&query=Mahalakshmi+Travels+Vellore" target="_blank" class="card-btn btn-map">📍 Map</a>
+      <a href="#" target="_blank" class="card-btn btn-web">🌐 Website</a>
+    </div>
+  </div>
+
+  <!-- Durga Travels -->
+  <div class="directory-card">
+    <div class="directory-card-title">Durga Travels</div>
+    <div class="directory-card-item">
+      <span>📍</span>
+      <span>81, Chittoor Road, Katpadi,<br>Vellore - 632007</span>
+    </div>
+    <div class="directory-card-item">
+      <span>📞</span>
+      <a href="tel:04162296102" style="color: #4b5563; text-decoration: none;">0416-2296102</a>
+    </div>
+    <div class="card-actions">
+      <a href="https://www.google.com/maps/search/?api=1&query=Durga+Travels+Vellore" target="_blank" class="card-btn btn-map">📍 Map</a>
+      <a href="#" target="_blank" class="card-btn btn-web">🌐 Website</a>
+    </div>
+  </div>
+
+</div>
 </div>
  </div>
-<?php include'includes/right.html'; ?>
-<div class="clr"></div>
 </div>
-<?php include'includes/footer.html'; ?>
-<div class="clr"></div>
 </div>
+</main>
+  <!-- Footer Section -->
+  <footer class="app-footer">
+    <div class="app-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Vellore Travels</h3>
+          <p>Your premier gateway to exploring the historic Fort City of Tamil Nadu. Offering reliable, comfortable, and professional taxi and tour services since 2008.</p>
+          <p>&copy; 2026 Vellore Travels. All rights reserved.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links" id="footer-navigation-links">
+            <li><a href="#home" data-route="home">Home</a></li>
+            <li><a href="#places" data-route="places">Tourist Attractions</a></li>
+            <li><a href="#directory" data-route="directory">City Directory</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Reach Us</h3>
+          <p><strong>Office:</strong> Officers Line, Vellore, Tamil Nadu, India</p>
+          <p><strong>Helpline:</strong> +91 416 2223051</p>
+          <p><strong>Email:</strong> bookings@velloretravels.in</p>
+        </div>
+      </div>
+      <div class="copyright">
+        Designed for visual excellence, accessibility, and modern responsive performance.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-menu-new .nav-item-new a');
+    document.querySelectorAll('.nav-item-new').forEach(li => li.classList.remove('active'));
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPath) {
+        link.parentElement.classList.add('active');
+      }
+    });
+  });
+  </script>
 </body>
 </html>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.nav-menu-new .nav-item-new a');
-  document.querySelectorAll('.nav-item-new').forEach(li => li.classList.remove('active'));
-  navLinks.forEach(link => {
-    if (link.getAttribute('href') === currentPath) {
-      link.parentElement.classList.add('active');
-    }
-  });
-});
-</script>
-
