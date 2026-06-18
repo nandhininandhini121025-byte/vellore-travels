@@ -1174,3 +1174,14 @@ body {
   box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 
+.info-card {
+  border-left: 5px solid #cc0000;
+}
+.info-card h2 {
+  color: #cc0000;
+}
+.hero-slide {
+  border: 3px solid #cc0000;
+  box-sizing: border-box;
+}
+
