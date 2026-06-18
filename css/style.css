@@ -1053,15 +1053,15 @@ footer.app-footer::before {
  
 
 /* USER OVERRIDES */
-header.app-header { background: #880808 !important; border-bottom: none !important; }
-body.home-active header.app-header { background: #880808 !important; }
+header.app-header { background: #991b1b !important; border-bottom: none !important; }
+body.home-active header.app-header { background: #991b1b !important; }
 .brand-name { color: #ffffff !important; }
 .brand-name span.accent-text { color: #ffde59 !important; }
 .nav-link { color: #ffffff !important; }
 .nav-link:hover, .nav-item.active .nav-link { color: #ffde59 !important; }
 .nav-btn { color: #ffffff !important; border-color: #ffffff !important; }
-.nav-btn:hover { background: #ffffff !important; color: #880808 !important; }
-footer.app-footer { background: #880808 !important; }
+.nav-btn:hover { background: #ffffff !important; color: #991b1b !important; }
+footer.app-footer { background: #991b1b !important; }
 
 
 
@@ -1071,7 +1071,7 @@ footer.app-footer { background: #880808 !important; }
   font-family: Arial, sans-serif;
 }
 .header-top-bar {
-  background-color: #880808;
+  background-color: #991b1b;
   padding: 15px 0;
 }
 .header-container-top {
@@ -1089,7 +1089,7 @@ footer.app-footer { background: #880808 !important; }
 }
 .brand-logo-white-box {
   background-color: white;
-  color: #880808;
+  color: #991b1b;
   width: 45px;
   height: 45px;
   border-radius: 8px;
@@ -1143,13 +1143,13 @@ footer.app-footer { background: #880808 !important; }
   text-transform: uppercase;
 }
 .nav-item-new.active {
-  border-bottom: 3px solid #880808;
+  border-bottom: 3px solid #991b1b;
 }
 .nav-item-new.active a {
-  color: #880808;
+  color: #991b1b;
 }
 
-.page-header { background: #880808 !important; }
+.page-header { background: #991b1b !important; }
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -1175,19 +1175,19 @@ body {
 }
 
 .info-card {
-  border-left: 5px solid #880808;
+  border-left: 5px solid #991b1b;
 }
 .info-card h2 {
-  color: #880808;
+  color: #991b1b;
 }
 .hero-slide {
-  border: 3px solid #880808;
+  border: 3px solid #991b1b;
   box-sizing: border-box;
 }
 
 /* RED STRIP HEADER */
 .app-header-red-strip {
-  background-color: #880808;
+  background-color: #991b1b;
   color: #fff;
   padding: 15px 0;
   width: 100%;
@@ -1239,7 +1239,7 @@ body {
 
 .btn-contact-white {
   background-color: #fff;
-  color: #880808;
+  color: #991b1b;
   padding: 8px 16px;
   text-decoration: none;
   font-weight: bold;
@@ -1255,7 +1255,7 @@ body {
 
 /* RED STRIP FOOTER */
 .app-footer-red-strip {
-  background-color: #880808;
+  background-color: #991b1b;
   padding: 30px 0;
   text-align: center;
   margin-top: 50px;
@@ -1332,7 +1332,7 @@ body {
   font-weight: 800;
   margin-bottom: 15px;
   letter-spacing: 1px;
-  color: #880808;
+  color: #991b1b;
 }
 
 .hero-subtitle {
@@ -1383,7 +1383,7 @@ body {
 }
 
 .btn-search:hover {
-  background-color: #880808;
+  background-color: #991b1b;
 }
 
 .hero-categories-title {
@@ -1416,7 +1416,7 @@ body {
 .cat-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  color: #880808;
+  color: #991b1b;
 }
 
 /* OVERLAPPING FEATURE CARDS */
