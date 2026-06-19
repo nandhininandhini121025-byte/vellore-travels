@@ -1503,3 +1503,54 @@ body {
   }
 }
 
+
+/* Responsive Nav & Hero Overrides */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block !important;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-primary);
+    padding: 20px 0;
+    box-shadow: var(--shadow-md);
+    z-index: 999;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .nav-link {
+    color: var(--text-primary) !important;
+    width: 100%;
+    text-align: center;
+    padding: 12px !important;
+  }
+  .red-strip-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .nav-and-contact {
+    display: flex;
+    align-items: center;
+  }
+  .hero-main-title {
+    font-size: 36px !important;
+  }
+  .hero-vellore-text {
+    font-size: 48px !important;
+  }
+  .btn-contact-white {
+    display: none; /* Hide contact button on small screens to save space, or keep it */
+  }
+}
