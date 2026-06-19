@@ -1560,19 +1560,21 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: var(--accent-primary);
-  color: white;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/back-button.png');
+  background-size: cover;
+  background-color: transparent;
+  color: transparent;
   border: none;
-  padding: 10px 20px;
-  border-radius: 50px;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 600;
+  border-radius: 50%;
   box-shadow: var(--shadow-md);
   cursor: pointer;
   z-index: 1000;
   transition: var(--transition-fast);
+  text-indent: -9999px; /* hide text */
+  overflow: hidden;
 }
 .btn-back:hover {
-  background: var(--accent-secondary);
-  transform: translateY(-2px);
+  transform: scale(1.1);
 }
