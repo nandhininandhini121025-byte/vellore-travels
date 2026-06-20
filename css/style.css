@@ -1578,3 +1578,45 @@ body {
 .btn-back:hover {
   transform: scale(1.1);
 }
+
+/* Modern Tourist Place Detail Layout */
+.place-detail-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.place-text {
+  flex: 1;
+}
+.place-text p {
+  margin-bottom: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+.place-image {
+  flex: 0 0 450px; /* Fixed width on desktop */
+}
+.place-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  object-fit: cover;
+  float: none !important; /* override inline styles */
+  margin: 0 !important; /* override inline styles */
+}
+
+@media (max-width: 968px) {
+  .place-detail-layout {
+    flex-direction: column-reverse; /* Put image on top on mobile */
+    gap: 20px;
+  }
+  .place-image {
+    flex: 1;
+    width: 100%;
+  }
+  .place-image img {
+    max-height: 400px;
+  }
+}

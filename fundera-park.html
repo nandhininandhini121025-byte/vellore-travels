@@ -39,16 +39,13 @@
     </header>
 
 <button onclick="history.back()" class="btn-back">? Back</button>
-</body>
-</html>
-
 <main class="main-content animated-fade-in" id="app-root">
 <div class="app-container" style="padding-top: 120px; padding-bottom: 80px;">
   <div style="background:#fff; padding:40px; border-radius:20px; box-shadow:0 20px 40px rgba(0,0,0,0.08);">
-    <div class="contents">
-      <h1><a href="tourist-places.html" style="color:var(--text-secondary); text-decoration:none;">Tourist Places</a> &raquo; <span>Fundera Park </span></h1>
+    <div class="contents place-detail-layout"><div class="place-text">
+      <h1><span>Fundera Park </span></h1>
       <p>
-        <img src="images/fundera_park.jpg" alt="Fundera Park" style="float:right; margin:5px 0px 15px 20px; width:400px; border-radius:12px; box-shadow:0 10px 20px rgba(0,0,0,0.1);" />
+        
         Fundera Park is a unique and interactive exotic bird park and petting zoo located in Yelagiri, Vellore District. It is an amazing family destination where visitors can walk freely among beautiful, exotic birds that fly around without cages.
       </p>
       <p>
@@ -57,6 +54,18 @@
       <p>
         In addition to the aviaries, Fundera Park features a petting farm where children can interact with friendly domestic animals like miniature ponies, rabbits, guinea pigs, and goats. It is a fantastic spot for a weekend getaway that blends education with nature.
       </p>
+      <h2 style="margin-top: 30px; margin-bottom: 15px; color: var(--accent-primary);">How to Reach Fundera Park</h2><ul style="list-style-type: none; padding: 0; margin-bottom: 16px; color: var(--text-secondary); line-height: 1.8;"><li>🚌 <strong>By Bus:</strong> Located in Yelagiri Hills, about 90 km from Vellore. Buses run from Tirupattur and Jolarpettai.</li><li>🚆 <strong>By Train:</strong> Nearest railway station is Jolarpettai Junction (JTJ) at 21 km.</li><li>🚕 <strong>By Taxi:</strong> Best reached by a dedicated cab from Vellore or Jolarpettai to navigate the winding hill roads.</li></ul>
+    </div>
+    <div class="place-image" style="display: flex; flex-direction: column; gap: 20px;">
+      <img src="images/fundera_park.jpg" alt="Fundera Park Main View" />
+      <div style="display: flex; gap: 20px; width: 100%;">
+        <img src="images/fundera_grid_1.png" alt="Fundera Park Sign" style="flex: 1; height: 220px; width: 50%; object-fit: cover; border-radius: 8px;" />
+        <img src="images/fundera_grid_2.jpg" alt="Fundera Park Hills" style="flex: 1; height: 220px; width: 50%; object-fit: cover; border-radius: 8px;" />
+      </div>
+      <div style="display: flex; gap: 20px; width: 100%;">
+        <img src="images/fundera_grid_3.png" alt="Fundera Park Macaws" style="flex: 1; height: 220px; width: 50%; object-fit: cover; border-radius: 8px;" />
+        <img src="images/fundera_grid_4.jpg" alt="Fundera Park Ostrich" style="flex: 1; height: 220px; width: 50%; object-fit: cover; border-radius: 8px;" />
+      </div>
     </div>
   </div>
 </div>
@@ -124,6 +133,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+
+
+
+
+
+
+
 
 
 

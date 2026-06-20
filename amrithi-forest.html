@@ -39,20 +39,30 @@
     </header>
 
 <button onclick="history.back()" class="btn-back">? Back</button>
-</body>
-</html>
-
 <main class="main-content animated-fade-in" id="app-root">
 <div class="app-container" style="padding-top: 120px; padding-bottom: 80px;">
   <div style="background:#fff; padding:40px; border-radius:20px; box-shadow:0 20px 40px rgba(0,0,0,0.08);">
-    <div class="contents">
-      <h1><a href="tourist-places.html" style="color:var(--text-secondary); text-decoration:none;">Tourist Places</a> &raquo; <span>Amirthi Forest </span></h1>
+    <div class="contents place-detail-layout"><div class="place-text">
+      <h1><span>Amirthi Forest </span></h1>
       <p>
-        <img src="images/amrithi_zoo.jpg" alt="Amirthi Forest" style="float:right; margin:5px 0px 15px 20px; width:400px; border-radius:12px; box-shadow:0 10px 20px rgba(0,0,0,0.1);" />
+        
+
         Tucked away about 25 kms from Vellore is the picturesque Amirthi Forest. While one part of the area is maintained and developed as a wildlife sanctuary, a portion of it is open to tourists. Spread over 25 hectares, Amirthi Zoological Park is a popular getaway or picnic spot. 
       </p>
       <p>The area is lush with trees, herbal plants and different varieties of birds and animals. There is a small waterfall tucked away amidst the ravines and hills.</p>
       <p>Located under the Javadu Hills of Tellai, Amirthi offers a reasonable getaway. There is a play park for kids. You can enjoy a good walk along the meandering path cut along the rock steps. Check out accommodation options and facilities from the local forest authorities.</p>
+      <h2 style="margin-top: 30px; margin-bottom: 15px; color: var(--accent-primary);">How to Reach Amirthi Forest</h2><ul style="list-style-type: none; padding: 0; margin-bottom: 16px; color: var(--text-secondary); line-height: 1.8;"><li>🚌 <strong>By Bus:</strong> Located 25 km from Vellore. Town buses are available from Vellore Old Bus Stand, but frequencies may vary.</li><li>🚆 <strong>By Train:</strong> Nearest major station is Vellore Cantonment (VLR) or Katpadi (KPD).</li><li>🚕 <strong>By Taxi:</strong> Booking a direct round-trip cab from Vellore is highly recommended due to its remote location.</li></ul>
+    </div>
+    <div class="place-image" style="display: flex; flex-direction: column; gap: 20px;">
+      <img src="images/amrithi_zoo.jpg" alt="Amirthi Forest Main View" style="height: 250px; width: 100%; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);" />
+      <div style="display: flex; gap: 20px; width: 100%;">
+        <img src="images/amirthi_grid_1.jpg" alt="Amirthi Forest Road" style="flex: 1; height: 220px; width: 50%;" />
+        <img src="images/amirthi_grid_2.jpg" alt="Amirthi Forest River" style="flex: 1; height: 220px; width: 50%;" />
+      </div>
+      <div style="display: flex; gap: 20px; width: 100%;">
+        <img src="images/amirthi_grid_3.png" alt="Amirthi Forest Deer" style="flex: 1; height: 220px; width: 50%;" />
+        <img src="images/amirthi_grid_4.jpg" alt="Amirthi Forest Zoo Sign" style="flex: 1; height: 220px; width: 50%;" />
+      </div>
     </div>
   </div>
 </div>
@@ -120,6 +130,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+
+
+
+
+
+
+
 
 
 

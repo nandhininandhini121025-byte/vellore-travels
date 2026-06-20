@@ -13,6 +13,198 @@
   <!-- Base stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* New 3-Column Layout */
+    .wide-home-container {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 0 30px 40px 30px;
+    }
+    .home-layout-3col {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr) 300px;
+      gap: 30px;
+      margin-top: 40px; /* Changed from -20px to 40px to add space below the banner */
+      margin-bottom: 60px;
+    }
+    @media (max-width: 968px) {
+      .home-layout-3col {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    /* Sidebars */
+    .sidebar-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar-menu li {
+      margin-bottom: 8px;
+    }
+    .sidebar-menu a {
+      display: block;
+      padding: 10px 15px;
+      background: var(--bg-primary);
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      font-weight: 500;
+      transition: var(--transition-fast);
+      border-left: 3px solid transparent;
+    }
+    .sidebar-menu a:hover {
+      background: #fef2f2;
+      color: var(--accent-primary);
+      border-left-color: var(--accent-primary);
+    }
+    .sidebar-img {
+      width: 100%;
+      border-radius: var(--radius-sm);
+      transition: transform 0.3s;
+    }
+    .sidebar-img:hover {
+      transform: scale(1.02);
+    }
+    
+    /* Center Content */
+    .center-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      min-width: 0; /* Fixes grid blowout */
+    }
+    
+    /* Welcome Section */
+    .welcome-img {
+      float: right;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      max-width: 40%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    @media (max-width: 768px) {
+      .welcome-img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    
+    /* Featured Destination */
+    .featured-destination {
+      position: relative;
+      background-color: #fffbfa; /* Slight warm tint */
+      border: 1px solid #fee2e2;
+    }
+    .featured-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: var(--accent-secondary);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      box-shadow: var(--shadow-sm);
+      z-index: 2;
+    }
+    .featured-title {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    @media (min-width: 768px) {
+      .featured-title {
+        padding-right: 180px; /* Make room for badge */
+      }
+    }
+    .featured-desc {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .featured-img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: contain; /* Ensures the whole image is visible without cropping */
+      border-radius: var(--radius-sm);
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+      background-color: #f8fafc;
+    }
+    .featured-btn {
+      display: inline-block;
+      text-align: center;
+      max-width: 250px;
+    }
+    
+    /* Attractions Gallery */
+    .scroller-container {
+      overflow-x: auto;
+      padding-bottom: 15px;
+    }
+    .attractions-gallery {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .attractions-gallery li {
+      flex-shrink: 0;
+    }
+    .attractions-gallery img {
+      height: 120px;
+      width: 180px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.3s;
+    }
+    .attractions-gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-md);
+    }
+    
+    /* Testimonial Card */
+    .testimonial-card {
+      padding: 15px;
+      background: var(--bg-primary);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--accent-primary);
+    }
+
+    /* Global Responsive Fixes for Hero Banner/Images */
+    @media (max-width: 768px) {
+      .hero-slide {
+        background-position: center !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-color: #000 !important;
+      }
+      .home-hero-full {
+        min-height: 350px !important;
+        padding-top: 100px !important;
+      }
+      .hero-content-wrapper {
+        padding-bottom: 40px !important;
+      }
+      .hero-main-title {
+        font-size: 32px !important;
+      }
+      .hero-vellore-text {
+        font-size: 48px !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -24,7 +216,13 @@
           <span class="brand-name-new" style="color: white; font-weight: bold; font-size: 24px; margin-left: 10px;">Vellore <span class="accent-text" style="color: #ffcccb;">Travels</span></span>
         </a>
         <div class="nav-and-contact">
-          <button class="menu-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')">?</button>
+          <button class="menu-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')" style="background: none; border: none; color: white; cursor: pointer; padding: 5px; display: flex; align-items: center; justify-content: center;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
           <nav class="nav-menu">
             <a href="index.html">HOME</a>
             <a href="tourist-places.html">TOURIST PLACES</a>
@@ -51,14 +249,8 @@
         <p class="hero-subtitle">Find great places to stay, eat, shop, or visit from local experts</p>
         
         <div class="hero-search-box">
-          <input type="text" placeholder="Ex: hotel, taxi, temple">
-          <select>
-            <option>Where</option>
-            <option>Vellore Fort</option>
-            <option>Sripuram Golden Temple</option>
-            <option>CMC Vellore</option>
-          </select>
-          <button class="btn-search">Search</button>
+          <input type="text" id="hero-search-input" placeholder="Ex: hotel, taxi, temple">
+          <button class="btn-search" onclick="handleHeroSearch()">Search</button>
         </div>
         
         <p class="hero-categories-title">Or browse the highlights</p>
@@ -71,17 +263,150 @@
       </div>
     </div>
 
+    <div class="wide-home-container">
+      <div class="home-layout-3col">
+        
+        <!-- Left Sidebar -->
+        <aside class="sidebar-left">
+          <div class="widget-panel">
+            <h2 class="widget-title">Tourist Places</h2>
+            <ul class="sidebar-menu">
+              <li><a href="vellore-fort.html">Vellore Fort</a></li>
+              <li><a href="golden-temple.html">Sripuram Golden Temple</a></li>
+              <li><a href="jalakandeswarar-temple.html">Jalakandeswarar Temple</a></li>
+              <li><a href="govt-museum.html">Government Museum</a></li>
+              <li><a href="fundera-park.html">Fundera Park</a></li>
+              <li><a href="amrithi-forest.html">Amirthi Forest</a></li>
+              <li><a href="st-johns-church.html">St. John's Church</a></li>
+              <li><a href="ratnagiri-murugan-temple.html">Ratnagiri Temple</a></li>
+            </ul>
+            
+          </div>
+        </aside>
+
+        <!-- Center Content -->
+        <div class="center-content">
+          <!-- Welcome Section -->
+          <div class="glass-panel welcome-section">
+            <h1 class="section-title">Welcome to <span>Vellore Travels</span></h1>
+            <div class="welcome-text">
+              <img src="images/welcome.jpg" alt="Welcome to Vellore" class="welcome-img">
+              <p>Welcome to the Fort City of Tamil Nadu. Vellore has a rich blend of heritage and culture representing ancient Dravidian civilisation. From the historic seat of Pallavas, Cholas, and Nayaks, to its transition into a modern hub of education, research, and world-class medical facilities, Vellore invites you to explore its historic monuments and scenic spots.</p>
+            </div>
+          </div>
+
+          <!-- Featured Destination Section -->
+          <div class="glass-panel featured-destination">
+            <div class="featured-badge">FEATURED DESTINATION</div>
+            <h3 class="featured-title">Sripuram <span>Golden Temple</span></h3>
+            <p class="featured-desc">
+              Discover Sripuram, the spiritual marvel of Vellore. Built across 100 acres, this temple is covered in over 1.5 tonnes of pure gold foil, making it the largest golden temple in the world. Set along a star-shaped 1.8km pathway of spiritual teachings, Sripuram offers a colorful and dazzling view, sparkling brilliantly day and night.
+            </p>
+            <img src="images/new_golden_temple.png" alt="Sripuram Golden Temple" class="featured-img">
+            <a href="golden-temple.html" class="btn-primary featured-btn">Explore Golden Temple &raquo;</a>
+          </div>
+
+          <!-- Must-Visit Attractions Section -->
+          <div class="glass-panel attractions-section">
+            <h2 class="section-title">Must-Visit <span>Attractions</span></h2>
+            <div class="scroller-container">
+              <ul class="attractions-gallery">
+                <li><a href="vellore-fort.html"><img src="images/new_vellore_fort.png" alt="Vellore Fort"></a></li>
+                <li><a href="jalakandeswarar-temple.html"><img src="images/new_jalakandeswarar.png" alt="Jalakandeswarar Temple"></a></li>
+                <li><a href="govt-museum.html"><img src="images/new_govt_museum.png" alt="Government Museum"></a></li>
+                <li><a href="fundera-park.html"><img src="images/fundera_park.jpg" alt="Fundera Park"></a></li>
+                <li><a href="st-johns-church.html"><img src="images/st_johns_church.jpg" alt="St. John's Church"></a></li>
+                <li><a href="ratnagiri-murugan-temple.html"><img src="images/ratnagiri_temple.png" alt="Ratnagiri Temple"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+          <div class="widget-panel">
+            <h2 class="widget-title">Quick Enquiry</h2>
+            <form class="enquiry-form" action="mail-right.html" method="post">
+              <div class="form-group">
+                <input type="text" name="Name" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="Mobile_No" class="form-control" placeholder="Mobile No." required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="EMail" class="form-control" placeholder="Email Id." required>
+              </div>
+              <div class="form-group">
+                <textarea name="Message" rows="4" class="form-control" placeholder="Message" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Send</button>
+            </form>
+          </div>
+
+          <div class="widget-panel" style="margin-top: 24px;">
+            <h2 class="widget-title">Testimonial</h2>
+            <div class="testimonial-card">
+              <h4 style="margin-bottom: 6px;">Shrine Properties</h4>
+              <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">The marketing consultants of flats and plots dealing with the real estate.</p>
+            </div>
+            <div class="testimonial-card" style="margin-top: 15px;">
+              <h4 style="margin-bottom: 6px;">Happy Tourist</h4>
+              <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">Vellore Travels made our trip to the Golden Temple memorable and easy.</p>
+            </div>
+          </div>
+        </aside>
+        
+      </div>
+    </div>
+
     </main>
 
   <!-- Footer Section -->
   <footer class="app-footer-red-strip">
-    <div class="footer-social-icons">
-      <a href="#" class="social-icon">f</a>
-      <a href="#" class="social-icon">t</a>
-      <a href="#" class="social-icon">in</a>
-      <a href="#" class="social-icon">ig</a>
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vellore Travels. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="#">FB</a>
+          <a href="#">TW</a>
+          <a href="#">IG</a>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <script>
+    function handleHeroSearch() {
+      const inputVal = document.getElementById('hero-search-input').value.toLowerCase();
+      
+      // Use the text input
+      if (inputVal.includes('hotel') || inputVal.includes('stay') || inputVal.includes('room')) {
+        window.location.href = 'vellore-hotels.html';
+      } else if (inputVal.includes('taxi') || inputVal.includes('cab') || inputVal.includes('car')) {
+        window.location.href = 'vellore-taxiservice.html';
+      } else if (inputVal.includes('bank') || inputVal.includes('atm')) {
+        window.location.href = 'vellore-banks.html';
+      } else if (inputVal.includes('temple') || inputVal.includes('golden') || inputVal.includes('sripuram')) {
+        window.location.href = 'golden-temple.html';
+      } else if (inputVal.includes('fort')) {
+        window.location.href = 'vellore-fort.html';
+      } else if (inputVal.includes('place') || inputVal.includes('tourist') || inputVal.includes('visit')) {
+        window.location.href = 'tourist-places.html';
+      } else if (inputVal.trim() === '') {
+        alert('Please enter a search term.');
+      } else {
+        alert('No exact match found for "' + document.getElementById('hero-search-input').value + '". Redirecting to all Tourist Places...');
+        window.location.href = 'tourist-places.html';
+      }
+    }
+
+    // Allow pressing "Enter" in the input field
+    document.getElementById('hero-search-input').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        handleHeroSearch();
+      }
+    });
+  </script>
 
   <!-- Lightbox Modal for Tourist Spots details -->
   <div class="modal-overlay" id="attraction-details-modal">
@@ -132,4 +457,3 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-
