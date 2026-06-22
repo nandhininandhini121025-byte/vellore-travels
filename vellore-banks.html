@@ -16,33 +16,28 @@
 <body>
 
   <!-- Sticky Glassmorphic Header -->
-        <header class="app-header-red-strip">
-      <div class="red-strip-container">
-        <a href="index.html" class="logo-section">
-          <div class="brand-logo-vt">VT</div>
-          <span class="brand-name-new" style="color: white; font-weight: bold; font-size: 24px; margin-left: 10px;">Vellore <span class="accent-text" style="color: #ffcccb;">Travels</span></span>
-        </a>
-        <div class="nav-and-contact">
-          <button class="menu-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')" style="background: none; border: none; color: white; cursor: pointer; padding: 5px; display: flex; align-items: center; justify-content: center;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-          </button>
-          <nav class="nav-menu">
-            <a href="index.html">HOME</a>
-            <a href="tourist-places.html">TOURIST PLACES</a>
-            <a href="vellore-hotels.html">HOTELS TO STAY</a>
-            <a href="vellore-atm.html">ATM</a>
-            <a href="vellore-banks.html">BANKS</a>
-            <a href="vellore-taxiservice.html">TAXI</a>
-            <a href="tour-operator.html">TOUR OPERATORS</a>
-          </nav>
-          <a href="contactus.html" class="btn-contact-white" style="margin-left: 25px;">CONTACT US</a>
-        </div>
+          <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="20" height="20" style="position: absolute; z-index: 2;">
+          <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
       </div>
-    </header>
+      velloretravels
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="btn-home">HOME</a>
+      <a href="tourist-places.html">TOURIST PLACES</a>
+      <a href="vellore-hotels.html">HOTELS TO STAY</a>
+      <a href="vellore-atm.html">ATM</a>
+      <a href="vellore-banks.html">BANKS</a>
+      <a href="vellore-taxiservice.html">TAXI</a>
+      <a href="tour-operator.html">TOUR OPERATORS</a>
+      <a href="contactus.html">CONTACT US</a>
+    </nav>
+  </header>
 
 <button onclick="history.back()" class="btn-back">? Back</button>
 <main class="main-content animated-fade-in" id="app-root">
@@ -224,32 +219,36 @@
 </div>
 </main>
   <!-- Footer Section -->
-  <footer class="app-footer">
-    <div class="app-container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h3>Vellore Travels</h3>
-          <p>Your premier gateway to exploring the historic Fort City of Tamil Nadu. Offering reliable, comfortable, and professional taxi and tour services since 2008.</p>
-          <p>&copy; 2026 Vellore Travels. All rights reserved.</p>
-        </div>
-        <div class="footer-col">
-          <h3>Quick Links</h3>
-          <ul class="footer-links" id="footer-navigation-links">
-            <li><a href="#home" data-route="home">Home</a></li>
-            <li><a href="#places" data-route="places">Tourist Attractions</a></li>
-            <li><a href="#directory" data-route="directory">City Directory</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Reach Us</h3>
-          <p><strong>Office:</strong> Officers Line, Vellore, Tamil Nadu, India</p>
-          <p><strong>Helpline:</strong> +91 416 2223051</p>
-          <p><strong>Email:</strong> bookings@velloretravels.in</p>
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-jagged"></div>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4>About Vellore</h4>
+        <p>Vellore is an ancient and historically rich urban hub in Tamil Nadu, India, situated on the banks of the Palar River. Celebrated as the "Fort City", it is famous for its magnificent 16th-century fort, Sripuram Golden Temple, and world-renowned medical and educational institutions.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tourist-places.html">Sightseeing</a></li>
+          <li><a href="vellore-hotels.html">Hotels & Stays</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" class="social-icon">F</a>
+          <a href="#" class="social-icon">I</a>
+          <a href="#" class="social-icon">Y</a>
+          <a href="#" class="social-icon">X</a>
         </div>
       </div>
-      <div class="copyright">
-        Designed for visual excellence, accessibility, and modern responsive performance.
-      </div>
+    </div>
+    <div class="footer-bottom">
+      Copyright © 2026 | Powered by JB Soft System
     </div>
   </footer>
 
