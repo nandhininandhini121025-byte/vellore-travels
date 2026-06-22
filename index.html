@@ -140,6 +140,29 @@
       box-shadow: var(--shadow-sm);
       background-color: #f8fafc;
     }
+    .featured-slider-container {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+      border-radius: var(--radius-sm);
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+      background-color: #f8fafc;
+    }
+    .featured-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+    .featured-slide.active {
+      opacity: 1;
+    }
     .featured-btn {
       display: inline-block;
       text-align: center;
@@ -172,6 +195,23 @@
     .attractions-gallery img:hover {
       transform: scale(1.05);
       box-shadow: var(--shadow-md);
+    }
+    .attraction-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+    }
+    .attraction-name {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      text-align: center;
+      transition: color 0.3s;
+    }
+    .attraction-link:hover .attraction-name {
+      color: var(--accent-primary);
     }
     
     /* Testimonial Card */
@@ -232,7 +272,7 @@
             <a href="vellore-taxiservice.html">TAXI</a>
             <a href="tour-operator.html">TOUR OPERATORS</a>
           </nav>
-          <a href="contactus.html" class="btn-contact-white">CONTACT US</a>
+          <a href="contactus.html" class="btn-contact-white" style="margin-left: 25px;">CONTACT US</a>
         </div>
       </div>
     </header>
@@ -295,15 +335,23 @@
             </div>
           </div>
 
-          <!-- Featured Destination Section -->
+          <!-- Discover Vellore Section -->
           <div class="glass-panel featured-destination">
-            <div class="featured-badge">FEATURED DESTINATION</div>
-            <h3 class="featured-title">Sripuram <span>Golden Temple</span></h3>
+            <div class="featured-badge">EXPLORE VELLORE</div>
+            <h3 class="featured-title">Temples & <span>Tourist Spots</span></h3>
             <p class="featured-desc">
-              Discover Sripuram, the spiritual marvel of Vellore. Built across 100 acres, this temple is covered in over 1.5 tonnes of pure gold foil, making it the largest golden temple in the world. Set along a star-shaped 1.8km pathway of spiritual teachings, Sripuram offers a colorful and dazzling view, sparkling brilliantly day and night.
+              Vellore offers a rich blend of history, spirituality, and natural beauty. From the majestic 16th-century Vellore Fort and the glittering Sripuram Golden Temple, to the serene landscapes of Amirthi Forest and Jalagamparai Waterfalls, there is something for every traveler. Discover the unique heritage, ancient temples, and vibrant culture that make this city a must-visit destination.
             </p>
-            <img src="images/new_golden_temple.png" alt="Sripuram Golden Temple" class="featured-img">
-            <a href="golden-temple.html" class="btn-primary featured-btn">Explore Golden Temple &raquo;</a>
+            <div class="featured-slider-container">
+              <img src="images/new_vellore_fort.png" alt="Vellore Fort" class="featured-slide active">
+              <img src="images/new_golden_temple.png" alt="Golden Temple" class="featured-slide">
+              <img src="images/new_jalakandeswarar.png" alt="Jalakandeswarar Temple" class="featured-slide">
+              <img src="images/new_govt_museum.png" alt="Government Museum" class="featured-slide">
+              <img src="images/fundera_park.jpg" alt="Fundera Park" class="featured-slide">
+              <img src="images/st_johns_church.jpg" alt="St. John's Church" class="featured-slide">
+              <img src="images/ratnagiri_temple.png" alt="Ratnagiri Temple" class="featured-slide">
+            </div>
+            <a href="tourist-places.html" class="btn-primary featured-btn">Discover All Places &raquo;</a>
           </div>
 
           <!-- Must-Visit Attractions Section -->
@@ -311,12 +359,12 @@
             <h2 class="section-title">Must-Visit <span>Attractions</span></h2>
             <div class="scroller-container">
               <ul class="attractions-gallery">
-                <li><a href="vellore-fort.html"><img src="images/new_vellore_fort.png" alt="Vellore Fort"></a></li>
-                <li><a href="jalakandeswarar-temple.html"><img src="images/new_jalakandeswarar.png" alt="Jalakandeswarar Temple"></a></li>
-                <li><a href="govt-museum.html"><img src="images/new_govt_museum.png" alt="Government Museum"></a></li>
-                <li><a href="fundera-park.html"><img src="images/fundera_park.jpg" alt="Fundera Park"></a></li>
-                <li><a href="st-johns-church.html"><img src="images/st_johns_church.jpg" alt="St. John's Church"></a></li>
-                <li><a href="ratnagiri-murugan-temple.html"><img src="images/ratnagiri_temple.png" alt="Ratnagiri Temple"></a></li>
+                <li><a href="vellore-fort.html" class="attraction-link"><img src="images/new_vellore_fort.png" alt="Vellore Fort"><span class="attraction-name">Vellore Fort</span></a></li>
+                <li><a href="jalakandeswarar-temple.html" class="attraction-link"><img src="images/new_jalakandeswarar.png" alt="Jalakandeswarar Temple"><span class="attraction-name">Jalakandeswarar Temple</span></a></li>
+                <li><a href="govt-museum.html" class="attraction-link"><img src="images/new_govt_museum.png" alt="Government Museum"><span class="attraction-name">Government Museum</span></a></li>
+                <li><a href="fundera-park.html" class="attraction-link"><img src="images/fundera_park.jpg" alt="Fundera Park"><span class="attraction-name">Fundera Park</span></a></li>
+                <li><a href="st-johns-church.html" class="attraction-link"><img src="images/st_johns_church.jpg" alt="St. John's Church"><span class="attraction-name">St. John's Church</span></a></li>
+                <li><a href="ratnagiri-murugan-temple.html" class="attraction-link"><img src="images/ratnagiri_temple.png" alt="Ratnagiri Temple"><span class="attraction-name">Ratnagiri Temple</span></a></li>
               </ul>
             </div>
           </div>
@@ -324,23 +372,10 @@
 
         <!-- Right Sidebar -->
         <aside class="sidebar-right">
-          <div class="widget-panel">
-            <h2 class="widget-title">Quick Enquiry</h2>
-            <form class="enquiry-form" action="mail-right.html" method="post">
-              <div class="form-group">
-                <input type="text" name="Name" class="form-control" placeholder="Name" required>
-              </div>
-              <div class="form-group">
-                <input type="text" name="Mobile_No" class="form-control" placeholder="Mobile No." required>
-              </div>
-              <div class="form-group">
-                <input type="email" name="EMail" class="form-control" placeholder="Email Id." required>
-              </div>
-              <div class="form-group">
-                <textarea name="Message" rows="4" class="form-control" placeholder="Message" required></textarea>
-              </div>
-              <button type="submit" class="btn-primary">Send</button>
-            </form>
+          <div class="widget-panel" style="text-align: center; padding: 25px 15px; background: linear-gradient(135deg, #fffbfa 0%, #fef2f2 100%); border: 1px solid #fee2e2; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--accent-primary); margin-bottom: 12px; font-size: 20px;">Advertise With Us</h3>
+            <p style="font-size: 14px; margin-bottom: 20px; color: var(--text-secondary); line-height: 1.5;">Do you want to give an advertisement on our website? Reach thousands of tourists every day.</p>
+            <a href="contactus.html" class="btn-primary" style="display: inline-block; padding: 10px 20px; border-radius: 20px; text-decoration: none;">Contact Us Now</a>
           </div>
 
           <div class="widget-panel" style="margin-top: 24px;">
@@ -426,6 +461,7 @@
   <!-- Slideshow Script -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+      // Main Hero Slider
       const slides = document.querySelectorAll('.hero-slide');
       let currentSlide = 0;
       
@@ -435,6 +471,18 @@
           currentSlide = (currentSlide + 1) % slides.length;
           slides[currentSlide].classList.add('active');
         }, 3000); // Change image every 3 seconds
+      }
+
+      // Featured Destination Slider
+      const fSlides = document.querySelectorAll('.featured-slide');
+      let fCurrentSlide = 0;
+      
+      if(fSlides.length > 0) {
+        setInterval(() => {
+          fSlides[fCurrentSlide].classList.remove('active');
+          fCurrentSlide = (fCurrentSlide + 1) % fSlides.length;
+          fSlides[fCurrentSlide].classList.add('active');
+        }, 3500); // Change image every 3.5 seconds
       }
     });
   </script>
