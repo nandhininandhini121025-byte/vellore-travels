@@ -79,7 +79,15 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js">
         var content = this.nextElementSibling;
         content.classList.toggle('show');
       });
-      
+
+      var menuToggle = document.querySelector('.menu-toggle');
+      var nav = document.querySelector('.nav');
+      if(menuToggle && nav) {
+        menuToggle.addEventListener('click', function() {
+          nav.classList.toggle('mobile-open');
+        });
+      }
+
       // Close dropdown if clicked outside
       window.addEventListener('click', function(e) {
         if (!e.target.matches('.dropdown > a') && !e.target.matches('.dropdown-arrow')) {

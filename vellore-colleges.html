@@ -70,7 +70,15 @@ IDA Scudder Church Road, <br>Bagayam,<br> Vellore-632004<br /> Phone: 0416-22820
         var content = this.nextElementSibling;
         content.classList.toggle('show');
       });
-      
+
+      var menuToggle = document.querySelector('.menu-toggle');
+      var nav = document.querySelector('.nav');
+      if(menuToggle && nav) {
+        menuToggle.addEventListener('click', function() {
+          nav.classList.toggle('mobile-open');
+        });
+      }
+
       // Close dropdown if clicked outside
       window.addEventListener('click', function(e) {
         if (!e.target.matches('.dropdown > a') && !e.target.matches('.dropdown-arrow')) {

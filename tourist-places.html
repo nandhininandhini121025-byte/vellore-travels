@@ -24,6 +24,7 @@
       </div>
       velloretravels
     </a>
+    <div class="menu-toggle">☰</div>
     <nav class="nav">
       <a href="index.html" class="btn-home">HOME</a>
       <a href="tourist-places.html">TOURIST PLACES</a>
@@ -337,7 +338,15 @@
         var content = this.nextElementSibling;
         content.classList.toggle('show');
       });
-      
+
+      var menuToggle = document.querySelector('.menu-toggle');
+      var nav = document.querySelector('.nav');
+      if(menuToggle && nav) {
+        menuToggle.addEventListener('click', function() {
+          nav.classList.toggle('mobile-open');
+        });
+      }
+
       // Close dropdown if clicked outside
       window.addEventListener('click', function(e) {
         if (!e.target.matches('.dropdown > a') && !e.target.matches('.dropdown-arrow')) {
