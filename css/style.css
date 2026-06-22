@@ -1798,6 +1798,6 @@ body {
   color: #cc0000 !important;
   opacity: 1 !important;
 }
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+
+
+.dropdown-content.show { display: block; }

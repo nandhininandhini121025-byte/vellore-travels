@@ -123,7 +123,33 @@
 
   <!-- SPA Router Logic removed to allow standard PHP rendering -->
 <button onclick="history.back()" class="btn-back">? Back</button>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var dropdownBtn = document.querySelector('.dropdown > a');
+    if(dropdownBtn) {
+      dropdownBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var content = this.nextElementSibling;
+        content.classList.toggle('show');
+      });
+      
+      // Close dropdown if clicked outside
+      window.addEventListener('click', function(e) {
+        if (!e.target.matches('.dropdown > a') && !e.target.matches('.dropdown-arrow')) {
+          var dropdowns = document.querySelectorAll('.dropdown-content');
+          dropdowns.forEach(function(content) {
+            if (content.classList.contains('show')) {
+              content.classList.remove('show');
+            }
+          });
+        }
+      });
+    }
+  });
+</script>
 </body>
+
 </html>
 
 
