@@ -8,7 +8,7 @@
   --bg-glass: rgba(255, 255, 255, 0.85);
   --bg-glass-active: #f1f5f9; /* Slate 100 */
   --border-glass: #e2e8f0; /* Slate 200 */
-  --border-glass-focus: rgba(185, 28, 28, 0.5); /* Gold focus */
+  --border-glass-focus: rgba(204, 0, 0, 0.5); /* Gold focus */
   
   --text-primary: #0f172a; /* Slate 900 */
   --text-secondary: #334155; /* Slate 700 */
@@ -25,8 +25,8 @@
   
   --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.02);
   --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
-  --shadow-lg: 0 20px 25px -5px rgba(185, 28, 28, 0.1), 0 10px 10px -5px rgba(185, 28, 28, 0.04); /* Gold shadow */
-  --shadow-glow: 0 10px 25px -5px rgba(185, 28, 28, 0.25);
+  --shadow-lg: 0 20px 25px -5px rgba(204, 0, 0, 0.1), 0 10px 10px -5px rgba(204, 0, 0, 0.04); /* Gold shadow */
+  --shadow-glow: 0 10px 25px -5px rgba(204, 0, 0, 0.25);
   
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -328,7 +328,7 @@ body:not(.home-active) .nav-btn:hover {
 }
 
 .search-submit-btn {
-  background: #ff4b4b; /* Vibrant Red */
+  background: #cc0000; /* Vibrant Red */
   color: #ffffff;
   border: none;
   padding: 16px 36px;
@@ -340,7 +340,7 @@ body:not(.home-active) .nav-btn:hover {
 }
 
 .search-submit-btn:hover {
-  background: #e63939;
+  background: #aa0000;
 }
 
 /* Highlights */
@@ -411,7 +411,7 @@ body:not(.home-active) .nav-btn:hover {
 }
 
 .feat-icon svg {
-  color: #ff4b4b; /* Match search button */
+  color: #cc0000; /* Match search button */
 }
 
 .feat-card h4 {
@@ -515,7 +515,7 @@ body:not(.home-active) .nav-btn:hover {
 }
 
 .glass-panel:hover {
-  border-color: rgba(185, 28, 28, 0.2); /* Gold hover border */
+  border-color: rgba(204, 0, 0, 0.2); /* Gold hover border */
   box-shadow: var(--shadow-lg);
 }
 
@@ -727,7 +727,7 @@ body:not(.home-active) .nav-btn:hover {
 
 .form-control:focus {
   border-color: var(--accent-primary);
-  box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.15); /* Gold shadow */
+  box-shadow: 0 0 0 3px rgba(204, 0, 0, 0.15); /* Gold shadow */
   background: var(--bg-secondary);
 }
 
@@ -753,7 +753,7 @@ textarea.form-control {
 .btn-primary:hover {
   transform: translateY(-2px);
   filter: brightness(1.05);
-  box-shadow: 0 6px 20px rgba(185, 28, 28, 0.35); /* Gold hover shadow */
+  box-shadow: 0 6px 20px rgba(204, 0, 0, 0.35); /* Gold hover shadow */
 }
 
 /* Reviews Panel Ticker */
@@ -778,7 +778,7 @@ textarea.form-control {
 
 .review-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: rgba(185, 28, 28, 0.15); /* Gold border */
+  border-color: rgba(204, 0, 0, 0.15); /* Gold border */
 }
 
 .review-text {
@@ -914,7 +914,7 @@ footer.app-footer {
   margin-top: 80px;
   border-top: none;
   padding: 80px 0 30px 0;
-  background: linear-gradient(135deg, #991b1b 0%, #450a0a 100%); /* Deep Crimson to Dark Red */
+  background: linear-gradient(135deg, #cc0000 0%, #450a0a 100%); /* Deep Crimson to Dark Red */
   color: #f8fafc;
   position: relative;
   overflow: hidden;
@@ -1027,7 +1027,7 @@ footer.app-footer::before {
     left: 0;
     right: 0;
     flex-direction: column;
-    background: rgba(185, 28, 28, 0.98); /* Matching red for mobile dropdown */
+    background: rgba(204, 0, 0, 0.98); /* Matching red for mobile dropdown */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 20px;
     gap: 12px;
@@ -1053,15 +1053,15 @@ footer.app-footer::before {
  
 
 /* USER OVERRIDES */
-header.app-header { background: #991b1b !important; border-bottom: none !important; }
-body.home-active header.app-header { background: #991b1b !important; }
+header.app-header { background: #cc0000 !important; border-bottom: none !important; }
+body.home-active header.app-header { background: #cc0000 !important; }
 .brand-name { color: #ffffff !important; }
 .brand-name span.accent-text { color: #ffde59 !important; }
 .nav-link { color: #ffffff !important; }
 .nav-link:hover, .nav-item.active .nav-link { color: #ffde59 !important; }
 .nav-btn { color: #ffffff !important; border-color: #ffffff !important; }
-.nav-btn:hover { background: #ffffff !important; color: #991b1b !important; }
-footer.app-footer { background: #991b1b !important; }
+.nav-btn:hover { background: #ffffff !important; color: #cc0000 !important; }
+footer.app-footer { background: #cc0000 !important; }
 
 
 
@@ -1071,7 +1071,7 @@ footer.app-footer { background: #991b1b !important; }
   font-family: Arial, sans-serif;
 }
 .header-top-bar {
-  background-color: #991b1b;
+  background-color: #cc0000;
   padding: 15px 0;
 }
 .header-container-top {
@@ -1089,7 +1089,7 @@ footer.app-footer { background: #991b1b !important; }
 }
 .brand-logo-white-box {
   background-color: white;
-  color: #991b1b;
+  color: #cc0000;
   width: 45px;
   height: 45px;
   border-radius: 8px;
@@ -1143,13 +1143,13 @@ footer.app-footer { background: #991b1b !important; }
   text-transform: uppercase;
 }
 .nav-item-new.active {
-  border-bottom: 3px solid #991b1b;
+  border-bottom: 3px solid #cc0000;
 }
 .nav-item-new.active a {
-  color: #991b1b;
+  color: #cc0000;
 }
 
-.page-header { background: #991b1b !important; }
+.page-header { background: #cc0000 !important; }
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -1175,19 +1175,19 @@ body {
 }
 
 .info-card {
-  border-left: 5px solid #991b1b;
+  border-left: 5px solid #cc0000;
 }
 .info-card h2 {
-  color: #991b1b;
+  color: #cc0000;
 }
 .hero-slide {
-  border: 3px solid #991b1b;
+  border: 3px solid #cc0000;
   box-sizing: border-box;
 }
 
 /* RED STRIP HEADER */
 .app-header-red-strip {
-  background-color: #991b1b;
+  background-color: #cc0000;
   color: #fff;
   padding: 15px 0;
   width: 100%;
@@ -1247,7 +1247,7 @@ body {
 
 .btn-contact-white {
   background-color: #fff;
-  color: #991b1b;
+  color: #cc0000;
   padding: 8px 16px;
   text-decoration: none;
   font-weight: bold;
@@ -1263,7 +1263,7 @@ body {
 
 /* RED STRIP FOOTER */
 .app-footer-red-strip {
-  background-color: #991b1b;
+  background-color: #cc0000;
   padding: 30px 0;
   text-align: center;
   margin-top: 50px;
@@ -1392,7 +1392,7 @@ body {
 }
 
 .btn-search:hover {
-  background-color: #991b1b;
+  background-color: #cc0000;
 }
 
 .hero-categories-title {
@@ -1425,7 +1425,7 @@ body {
 .cat-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  color: #991b1b;
+  color: #cc0000;
 }
 
 /* OVERLAPPING FEATURE CARDS */

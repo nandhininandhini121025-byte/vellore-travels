@@ -14,7 +14,7 @@
   --text-secondary: #334155; /* Slate 700 */
   --text-muted: #64748b; /* Slate 500 */
   
-  --accent-primary: #b91c1c; /* Crimson Red */
+  --accent-primary: #cc0000; /* Crimson Red */
   --accent-secondary: #d97706; /* Gold/Amber Accent */
   --accent-teal: #0d9488; /* Teal */
   --accent-gold: #d97706; /* Warm Gold */
@@ -308,7 +308,7 @@ body:not(.home-active) .nav-btn:hover {
 }
 
 .search-submit-btn {
-  background: #ff4b4b; /* Vibrant Red */
+  background: #cc0000; /* Vibrant Red */
   color: #ffffff;
   border: none;
   padding: 16px 36px;
@@ -320,7 +320,7 @@ body:not(.home-active) .nav-btn:hover {
 }
 
 .search-submit-btn:hover {
-  background: #e63939;
+  background: #aa0000;
 }
 
 /* Highlights */
@@ -391,7 +391,7 @@ body:not(.home-active) .nav-btn:hover {
 }
 
 .feat-icon svg {
-  color: #ff4b4b; /* Match search button */
+  color: #cc0000; /* Match search button */
 }
 
 .feat-card h4 {
@@ -894,7 +894,7 @@ footer.app-footer {
   margin-top: 80px;
   border-top: none;
   padding: 80px 0 30px 0;
-  background: linear-gradient(135deg, #991b1b 0%, #450a0a 100%); /* Deep Crimson to Dark Red */
+  background: linear-gradient(135deg, #cc0000 0%, #450a0a 100%); /* Deep Crimson to Dark Red */
   color: #f8fafc;
   position: relative;
   overflow: hidden;
@@ -1007,7 +1007,7 @@ footer.app-footer::before {
     left: 0;
     right: 0;
     flex-direction: column;
-    background: rgba(185, 28, 28, 0.98); /* Matching red for mobile dropdown */
+    background: rgba(204, 0, 0, 0.98); /* Matching red for mobile dropdown */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 20px;
     gap: 12px;
