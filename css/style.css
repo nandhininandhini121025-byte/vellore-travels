@@ -1854,3 +1854,12 @@ body {
   .footer { padding-top: 50px; }
   .logo { font-size: 20px; }
 }
+
+/* Global White Footer Text Override */
+.footer, .footer h1, .footer h2, .footer h3, .footer h4, .footer p, .footer a, .footer-bottom, .footer-col, .footer-links {
+  color: #ffffff !important;
+}
+.footer a:hover {
+  color: #ffffff !important;
+  opacity: 0.8;
+}
