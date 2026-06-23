@@ -1810,6 +1810,20 @@ body {
   color: white;
 }
 
+/* Base utility for galleries to wrap on mobile */
+.gallery-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.gallery-img {
+  flex: 1;
+  height: 220px;
+  width: 50%;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
 @media (max-width: 900px) {
   .header { padding: 0 20px; }
   .menu-toggle { display: block; }
@@ -1837,22 +1851,48 @@ body {
   .hero p { font-size: 18px; }
   
   /* Grids */
-  .features, .attractions-grid, .footer-content {
+  .features, .attractions-grid, .footer-content, .contact-layout {
     grid-template-columns: repeat(2, 1fr) !important;
     padding: 40px 20px !important;
     gap: 20px;
+  }
+  
+  .place-detail-layout {
+    flex-direction: column !important;
   }
 }
 
 @media (max-width: 600px) {
   /* Grids */
-  .features, .attractions-grid, .footer-content {
+  .features, .attractions-grid, .footer-content, .contact-layout {
     grid-template-columns: 1fr !important;
   }
-  .hero h1 { font-size: 40px; }
+  .hero h1 { font-size: 36px; }
+  .hero p { font-size: 16px; }
   .hero-nav { padding: 0 10px; }
-  .footer { padding-top: 50px; }
-  .logo { font-size: 20px; }
+  .footer { padding-top: 40px; }
+  .logo { font-size: 18px; }
+  
+  /* Fix spacing */
+  .app-container {
+    padding-top: 80px !important;
+    padding-bottom: 40px !important;
+  }
+  
+  .place-detail-layout > div {
+    padding: 20px !important;
+  }
+  
+  /* Stack image galleries on mobile */
+  .gallery-row {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+  .gallery-img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16/9;
+  }
 }
 
 /* Global White Footer Text Override */
