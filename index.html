@@ -123,7 +123,7 @@
     /* Hero */
     .hero {
       position: relative;
-      height: 600px;
+      height: 400px;
       background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('images/hero_high_res.png');
       background-size: cover;
       background-position: center;
@@ -186,9 +186,11 @@
 
     /* Features Section */
     .features {
-      padding: 80px 40px;
+      padding: 40px 40px 80px;
       max-width: 1200px;
-      margin: 0 auto;
+      margin: -60px auto 0;
+      position: relative;
+      z-index: 10;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
@@ -479,23 +481,23 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" id="hero-slider" style="transition: background-image 0.5s ease-in-out;">
     <h1>Welcome to Vellore</h1>
     <p>The Historical Fort City of Tamil Nadu</p>
     
     <div class="hero-nav">
-      <div class="hero-arrow">
+      <div class="hero-arrow" id="hero-prev">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </div>
-      <div class="hero-arrow">
+      <div class="hero-arrow" id="hero-next">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </div>
     </div>
     
     <div class="hero-dots">
-      <div class="dot"></div>
-      <div class="dot active"></div>
-      <div class="dot"></div>
+      <div class="dot active" data-index="0"></div>
+      <div class="dot" data-index="1"></div>
+      <div class="dot" data-index="2"></div>
     </div>
   </section>
 
@@ -613,6 +615,46 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+    // Hero Slider Logic
+    var heroSection = document.getElementById('hero-slider');
+    var prevBtn = document.getElementById('hero-prev');
+    var nextBtn = document.getElementById('hero-next');
+    var dots = document.querySelectorAll('.hero-dots .dot');
+    
+    var images = [
+      "url('images/hero_high_res.png')",
+      "url('images/new_vellore_fort.png')",
+      "url('images/new_golden_temple.png')"
+    ];
+    var currentSlide = 0;
+
+    function showSlide(index) {
+      if (index >= images.length) currentSlide = 0;
+      if (index < 0) currentSlide = images.length - 1;
+      
+      heroSection.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), ' + images[currentSlide];
+      
+      dots.forEach(function(d) { d.classList.remove('active'); });
+      dots[currentSlide].classList.add('active');
+    }
+
+    if(heroSection && prevBtn && nextBtn) {
+      nextBtn.addEventListener('click', function() { currentSlide++; showSlide(currentSlide); });
+      prevBtn.addEventListener('click', function() { currentSlide--; showSlide(currentSlide); });
+      
+      dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+          currentSlide = parseInt(this.getAttribute('data-index'));
+          showSlide(currentSlide);
+        });
+      });
+      
+      setInterval(function() {
+        currentSlide++;
+        showSlide(currentSlide);
+      }, 5000);
+    }
+
     var dropdownBtn = document.querySelector('.dropdown > a');
     if(dropdownBtn) {
       dropdownBtn.addEventListener('click', function(e) {
